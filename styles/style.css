@@ -1,0 +1,293 @@
+body {
+    margin: 0%;
+    padding: 0px;
+    background: white
+}
+
+/* Head */
+
+.header{
+    border: 1px, red, solid;
+    background-color: rgb(76, 69, 69);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    text-decoration: none;
+}
+
+a {
+    margin-top: 22px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* body pag h1 & Img con div = card*/
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 220px;
+    height: 310px;
+    border-radius: 15px;
+}
+
+.card img {
+    /*width: 25%;*/
+    margin: 20px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 20px rgba(169, 151, 237, 0.5);
+    padding: 15px;
+}
+
+/* Sobre mi */
+
+.cts {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+    margin-top: 70px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+#btnMostrarOcultaruno {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(76, 69, 69);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.col_uno {
+    width: 50%;
+    box-shadow: 5px 5px 20px rgba(169, 151, 237, 0.5);
+    padding: 15px;
+    margin: 20px;
+    display: none;
+    border-radius: 15px;
+}
+
+/* btn + contenido 2 */
+
+#btnMostrarOcultarDos {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(76, 69, 69);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.col_dos{
+    width: 50%;
+    box-shadow: 5px 5px 20px rgba(169, 151, 237, 0.5);
+    padding: 15px;
+    margin: 20px;
+    align-items: flex-end;
+    display: none;
+    border-radius: 15px;
+}
+
+.col_dos h4 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.col_dos img {
+    height: 25px;
+    width: 25px;
+}
+
+.col_dos .row_img {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col_dos .row_img2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+.col_dos .row_img3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+/*btn + contenido 3 */
+
+#btnMostrarOcultarTres {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(76, 69, 69);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.col_tres{
+    width: 50%;
+    height: auto;
+    box-shadow: 5px 5px 20px rgba(169, 151, 237, 0.5);
+    padding: 15px;
+    margin: 20px;
+    display: none;
+    border-radius: 15px;
+}
+
+.left {
+    display: grid;
+    justify-content: center;
+}
+
+.left h4 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.left p {
+    margin-top: -10px;
+    text-align: center;
+}
+
+.left a {
+    color: black;
+}
+
+.right {
+    display: grid;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.right h4 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.right p {
+    margin-top: -10px;
+    text-align: center;
+}
+
+.right a {
+    color: black;
+}
+
+/* Cotacto */
+/*
+.contenedor {
+    box-shadow: 5px 5px 20px rgba(169, 151, 237, 0.5);
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_col {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    padding: 15px;
+}
+
+.form_col {
+    padding: 15px;
+}
+
+/* Formulario */
+/*
+#formularioContacto {
+    box-shadow: 5px 5px 20px rgba(169, 151, 237, 0.5);
+    padding: 15px;
+    width: 50%;
+
+}/*
+
+/* Estilos para el contenedor */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 20px rgba(169, 151, 237, 0.5);
+}
+
+p {
+    color: black;
+}
+
+/* Estilos para las columnas */
+.contact_col, .form_col {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  
+/* Estilos para PC */
+@media (min-width: 768px) {
+    .contact_col, .form_col {
+      width: 48%;
+      margin: 1%;
+    }
+}
+
+@media (min-width: 768px) {
+    #mensaje{
+        width: 350px;
+    }
+}
+  
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .contact_col {
+      width: 100%;
+      margin: 1%;
+      text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    #mensaje{
+        width: 250px;
+    }
+}
+
+#formularioContacto {
+    box-shadow: 5px 5px 20px rgba(169, 151, 237, 0.5);
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+}

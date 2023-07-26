@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <title>Portfolio Neo Dau</title>
+    </head>
+    <body>
+        <header class="header">
+                <nav>
+                    <div>
+                        <ul class="list">
+                            <a href="#home"><li>Inicio</li></a>
+                            <a href="#title-About"><li>Sobre Mi<span></span></li></a>
+                            <a href="#title-Contact"><li>Contacto</li></a>
+                            <a href=""><li>Novedades</li></a>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+        <section id="home">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Neo Dau</h1>
+            <div class="card">
+                <div class="pic">
+                    <img src="./styles/img/Prefil CV.jpeg" alt="Foto Perfil">
+                </div>
+            </div>
+        </section>
+        <section class="cts">
+            <br>
+            <h2 id="title-About">About myself</h2>
+            <br>
+            <button id="btnMostrarOcultaruno">Historia</button>
+            <div class="box">
+                <div id="txt_uno" class="col_uno">
+                    <p>
+                        ¡Hola soy, un estudiante de desarrollo de software con una sólida formación y experiencia en diferentes aspectos de la tecnología. Mi travesía en este emocionante mundo comenzó con un título en Reparación y Mantenimiento de PC en la escuela Ma-Pa, donde adquirí los fundamentos esenciales para trabajar en el área de tecnología manipulando Hardware.
+                        Posteriormente, decidí llevar mi formación al siguiente nivel y me gradué de la academia Holberton School. Durante mi tiempo en Holberton, me sumergí en diversas tecnologías de desarrollo de software, lo que me permitió cultivar mis habilidades en programación, diseño de aplicaciones y soluciones innovadoras.
+                        Actualmente, continúo expandiendo mis conocimientos en la Universidad Técnica del Uruguay (UTU), específicamente en la Escuela Superior de Informática.
+                        Además de mi formación académica, me aventuré a emprender como desarrollador independiente, creando sitios web en la plataforma WordPress. Esta experiencia me ha proporcionado la oportunidad de enfrentar desafíos variados y perfeccionar mi habilidad para convertir ideas en realidad digital.
+                        Mi objetivo principal es unirme a un equipo en el campo de la informática y tecnología (IT), mi enfoque en la mejora continua y mi capacidad para trabajar en equipo me permiten aportar soluciones sólidas y creativas a proyectos desafiantes.
+                        Mi determinación y curiosidad me impulsan a seguir aprendiendo y creciendo en el ámbito de la tecnología, siempre dispuesto a enfrentar nuevos retos y explorar nuevas oportunidades. <br>
+                        ¡Gracias por visitar mi portfolio! Si tienes alguna pregunta o deseas saber más sobre mi trayectoria y proyectos, no dudes en contactarme!.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <button id="btnMostrarOcultarDos">Conocimientos</button>
+            <div class="box">
+                <div id="txt_dos" class="col_dos">
+                    <h4>Technologies</h4>
+                    <div class="row_img">
+                        <img src="./styles/img/python.jpg" alt="Python">
+                        <img src="./styles/img/python.jpg" alt="Python">
+                    </div>
+                    <div class="row_img2">
+                        <img src="./styles/img/python.jpg" alt="Python">
+                        <img src="./styles/img/python.jpg" alt="Python">
+                    </div>
+                    <div class="row_img3">
+                        <img src="./styles/img/python.jpg" alt="Python">
+                        <img src="./styles/img/python.jpg" alt="Python">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button id="btnMostrarOcultarTres">Proyectos</button>
+            <div class="box">
+                <div id="txt_tres" class="col_tres">
+                    <div class="left">
+                        <h4>Trabajos en WordPress</h4>
+                        <hr>
+                        <p><a href="https://bernarditao.com/" target="_blank">BernarditaO</a></p>
+                        <p><a href="https://guinchepez.com.uy/" target="_blank">Guinchepez</a></p>
+                        <p><a href="https://otfclothes.com/" target="_blank">Over The Falls</a></p>
+                        <p><a href="https://dauberyasociados.com.uy/" target="_blank">Dauberyasociados</a></p>
+                    </div>
+                    <div class="right">
+                        <h4>Proyectos Personales</h4>
+                        <hr>
+                        <p><a href="">Clubie</a></p>
+                        <p><a href="">My Portfolio</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 id="title-Contact">Contact</h2>
+            <div class="contenedor">
+                <div class="contact_col">
+                    <h4>Redes Sciales</h4>
+                    <a href="https://twitter.com/neodausanchez" target="_blank"><p>Twitter</p></a>
+                    <a href="https://www.linkedin.com/in/neo-dau-b01b77216/" target="_blank"><p>Linkedin</p></a>
+                    <a href="https://github.com/NeoDau" target="_blank"><p>Github</p></a>
+                </div>
+                <div class="form_col">
+                    <form id="formularioContacto">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="./index.js"></script>
+</html>
