@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/style.css">
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
         <title>Portfolio Neo Dau</title>
     </head>
     <body>
         <header class="header">
                 <nav>
-                    <div>
-                        <ul class="list">
-                            <a href="#home"><li>Inicio</li></a>
-                            <a href="#title-About"><li>Sobre Mi<span></span></li></a>
-                            <a href="#title-Contact"><li>Contacto</li></a>
-                            <a href=""><li>Novedades</li></a>
-                        </ul>
-                    </div>
+                    <ul id="menu" class="list">
+                        <a href="#home"><li>Inicio</li></a>
+                        <a href="#title-About"><li>Sobre Mí<span></span></li></a>
+                        <a href="#title-Contact"><li>Contacto</li></a>
+                        <!--<a href=""><li>Novedades</li></a>-->
+                    </ul>
+                    <button id="botonMenu" class="btn_movil">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
                 </nav>
         </header>
         <section id="home">
@@ -35,12 +40,12 @@
         </section>
         <section class="cts">
             <br>
-            <h2 id="title-About">About myself</h2>
+            <h2 id="title-About">Sobre Mí</h2>
             <br>
             <button id="btnMostrarOcultaruno">Historia</button>
             <div class="box">
                 <div id="txt_uno" class="col_uno">
-                    <p>
+                    <p class="parrafo">
                         ¡Hola soy, un estudiante de desarrollo de software con una sólida formación y experiencia en diferentes aspectos de la tecnología. Mi travesía en este emocionante mundo comenzó con un título en Reparación y Mantenimiento de PC en la escuela Ma-Pa, donde adquirí los fundamentos esenciales para trabajar en el área de tecnología manipulando Hardware.
                         Posteriormente, decidí llevar mi formación al siguiente nivel y me gradué de la academia Holberton School. Durante mi tiempo en Holberton, me sumergí en diversas tecnologías de desarrollo de software, lo que me permitió cultivar mis habilidades en programación, diseño de aplicaciones y soluciones innovadoras.
                         Actualmente, continúo expandiendo mis conocimientos en la Universidad Técnica del Uruguay (UTU), específicamente en la Escuela Superior de Informática.
@@ -86,36 +91,58 @@
                         <h4>Proyectos Personales</h4>
                         <hr>
                         <p><a href="">Clubie</a></p>
-                        <p><a href="">My Portfolio</a></p>
+                        <p><a href="index.html">My Portfolio</a></p>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <h2 id="title-Contact">Contact</h2>
+            <h2 id="title-Contact">Contacto</h2>
             <div class="contenedor">
-                <div class="contact_col">
-                    <h4>Redes Sciales</h4>
-                    <a href="https://twitter.com/neodausanchez" target="_blank"><p>Twitter</p></a>
-                    <a href="https://www.linkedin.com/in/neo-dau-b01b77216/" target="_blank"><p>Linkedin</p></a>
-                    <a href="https://github.com/NeoDau" target="_blank"><p>Github</p></a>
+                <div id="curved" class="contact_col">
+                    <div class="cv">
+                        <h4>Curriculum Vitae</h4>
+                        <a href="file:///C:/Users/Neo/Downloads/CV%20neo%20dau.pdf" download="" target="_blank">
+                            <button class="btn_cv">Descargar CV</button>
+                        </a>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                    <h4 class="red">Redes Personales</h4>
+                    <div class="logos">
+                        <div id="back">
+                            <a href="https://twitter.com/neodausanchez" target="_blank" class="fab fa-twitter"></a></a>
+                        </div>
+                        <a href="https://www.linkedin.com/in/neo-dau-b01b77216/" target="_blank" class="fab fa-linkedin"></a>
+                        <a href="https://github.com/NeoDau" target="_blank" class="fab fa-github"></a>
+                    </div>
                 </div>
                 <div class="form_col">
                     <form id="formularioContacto">
-                        <label for="nombre">Nombre:</label><br>
+                        <label for="nombre">Nombre</label><br>
                         <input type="text" id="nombre" name="nombre" required><br><br>
 
-                        <label for="email">Email:</label><br>
+                        <label for="email">Email</label><br>
                         <input type="email" id="email" name="email" required><br><br>
 
-                        <label for="mensaje">Mensaje:</label><br>
+                        <label for="asunto">Asunto</label><br>
+                        <input type="text" id="asunto" name="asunto" required><br><br>
+
+                        <label for="mensaje">Mensaje</label><br>
                         <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
 
-                        <input type="submit" value="Enviar">
+                        <input id="boton" type="submit" value="Enviar">
                     </form>
                 </div>
             </div>
         </section>
+        <section>
+
+        </section>
+        <footer class="footer">
+
+        </footer>
     </body>
     <script src="./index.js"></script>
 </html>
