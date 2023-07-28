@@ -55,7 +55,6 @@ function enviarEmail(event) {
     const formulario = document.getElementById("formularioContacto");
     const datosFormulario = new FormData(formulario);
 
-    // Cambia "tu_template_id" por tu Template ID de EmailJS
     emailjs.send("service_y2277p9", "template_y678wv2", {
         nombre: datosFormulario.get("nombre"),
         email: datosFormulario.get("email"),
