@@ -558,7 +558,7 @@ h4 {
 #curved {
     position: static;
     background: #EFEFEF;
-    height: 45vh;
+    height: auto;
     border-bottom-left-radius: 50% 10%;
     border-bottom-right-radius: 50% 10%;
     box-shadow: 5px 5px 20px rgba(169, 151, 237, 0.5);
