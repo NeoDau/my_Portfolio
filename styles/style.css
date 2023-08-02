@@ -10,7 +10,7 @@ body {
     background-color: rgb(76, 69, 69);
     height: 80px;
     width: 100%;
-    position: fixed;
+    position: absolute;
 }
 
 .btn_movil {
@@ -150,7 +150,7 @@ h2 {
 }
 
 #btnMostrarOcultaruno {
-    width: 100px;
+    width: 120px;
     height: 40px;
     background-color: rgb(76, 69, 69);
     color: white;
@@ -187,7 +187,7 @@ h2 {
 /* btn + contenido 2 */
 
 #btnMostrarOcultarDos {
-    width: 100px;
+    width: 120px;
     height: 40px;
     background-color: rgb(76, 69, 69);
     color: white;
@@ -235,10 +235,48 @@ h2 {
     margin-top: 35px;
 }
 
+/* Carrusel movil */
+
+
+@media (max-width: 767px) {
+    .carousel-inner {
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+        margin-left: 38%;
+    }
+}
+/* Carrusel PC */
+@media (min-width: 768px) {
+    .carousel-inner {
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+        margin-left: 47%;
+    }
+}
+
+#img_carrusel, img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.owl-nav {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.item {
+    height: 45px;
+    width: 45px;
+}
+
 /*btn + contenido 3 */
 
 #btnMostrarOcultarTres {
-    width: 100px;
+    width: 120px;
     height: 40px;
     background-color: rgb(76, 69, 69);
     color: white;
@@ -328,7 +366,7 @@ h2 {
 
 @media (min-width: 768px) {
     #mensaje{
-        width: 350px;
+        width: 310px;
     }
 }
   
@@ -354,6 +392,18 @@ h2 {
 }
 
 /* Redes logos */
+
+/* Movil */
+@media (max-width: 767px) {
+    .logos {
+        display: flex;
+        justify-content: space-around;
+        color: black;
+        margin-top: 50px;
+    }
+}
+
+/* PC */
 
 .logos {
     display: flex;
@@ -385,8 +435,8 @@ h4 {
     align-items: center;
     background-color: rgb(76, 69, 69);
     color: white;
-    height: 30px;
-    width: 30%;
+    height: 40px;
+    width: 120px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
