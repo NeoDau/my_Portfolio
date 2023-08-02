@@ -2,9 +2,15 @@
 const btnMenu = document.getElementById("botonMenu");
 const listMenu = document.getElementById("menu");
 
+// Evento "click" para pc 
 btnMenu.addEventListener("click", () => {
     listMenu.classList.toggle("visible");
 });
+
+/* Evento "touchstart" para dispositivos móviles
+btnMenu.addEventListener("touchstart", () => {
+    listMenu.classList.toggle("visible");
+});*/
 
 /* Botones mostrar/ocultar */
 document.addEventListener('DOMContentLoaded', function() {
@@ -18,6 +24,16 @@ document.addEventListener('DOMContentLoaded', function() {
             contenedorTexto.style.display = 'none';
         }
     });
+
+    /* Evento "touchstart" para dispositivos móviles
+    btnMostrarOcultar.addEventListener('touchstart', function() {
+        if (contenedorTexto.style.display === 'none') {
+            contenedorTexto.style.display = 'block';
+        } else {
+            contenedorTexto.style.display = 'none';
+        }
+    });
+    */
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -45,25 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-/* Carrusel con img */
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
 
 /* Funcion para enviar mail */
 emailjs.init("dQlTpCvvQkUTGuav4");
